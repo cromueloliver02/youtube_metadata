@@ -1,12 +1,14 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:youtube_metadata/open_graph.dart';
-part './model.dart';
+import 'package:youtube_metadata/src/open_graph.dart';
+part 'model.dart';
 
 class YoutubeMetaData {
+  const YoutubeMetaData();
+
   ///
   /// Get data from a youtube link
-  static Future<MetaDataModel> getData(String link) async {
+  Future<MetaDataModel> getData(String link) async {
     final Uri uri =
         Uri.parse("https://www.youtube.com/oembed?url=$link&format=json");
 

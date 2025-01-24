@@ -1,4 +1,4 @@
-part of './youtube.dart';
+part of 'youtube.dart';
 
 /// Data model to serialize youtube data
 class MetaDataModel {

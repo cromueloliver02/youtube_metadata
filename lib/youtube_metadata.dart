@@ -1,1 +1,1 @@
-export './youtube.dart';
+export 'src/youtube.dart';
